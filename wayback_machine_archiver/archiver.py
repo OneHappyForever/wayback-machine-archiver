@@ -38,7 +38,8 @@ def call_archiver(request_url, rate_limit_wait, session):
         r.raise_for_status()
     except requests.exceptions.HTTPError as e:
         logging.exception(e)
-        raise
+        # raise
+        pass
 
 
 def get_namespace(element):
